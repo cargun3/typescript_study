@@ -1,11 +1,11 @@
 {
-  "name": "corona-map",
+  "name": "typescript_sample",
   "version": "1.0.0",
-  "description": "corona-map-demo",
+  "description": "typescript-server by grunt",
   "private": true,
-  "author": "happygrammer",
+  "author": "gwkim,hyjung",
   "scripts": {
-    "dev": "gwkim,hyjung",
+    "dev": "grunt",
     "start": "node ./server.js",
     "build": "webpack --config webpack.config.js"
   },

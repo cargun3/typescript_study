@@ -3,9 +3,9 @@ var webpack = require('webpack');
 
 module.exports = {
     devtool: 'source-map', // bundling 할 때, 에러를 원래파일로 트래킹하기 위한 옵션
-    entry: ['./client/js'], // building 시작지점
+    entry: ['./asset/js'], // building 시작지점
     output: { // bundle 생성 위치
-        path: path.resolve(__dirname, 'dist/client/js'),
+        path: path.resolve(__dirname, 'dist/asset/js'),
         filename: 'app.js'
     },
     module: {
