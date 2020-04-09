@@ -1,8 +1,8 @@
 import * as $ from 'jquery'
-// import Item from "../../common/types/Item";
-// import * as template from "../../common/template";
-// import * as validator from "../../common/validator";
-// import * as Iresponse from "../../common/types/Iresponse";
+import Item from "../../common/types/Item";
+import * as template from "../../common/template";
+import * as validator from "../../common/validator";
+import * as Iresponse from "../../common/types/Iresponse";
 
 namespace Main.IndexPage {
     $(function () {
