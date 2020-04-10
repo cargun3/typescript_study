@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/* corona chart */
+.c_chart .cc_graph {position:relative;}
+
+.c_chart .cc_graph .axis_label > div > span {display:block; font-size:11px; line-height:15px;}
+.c_chart .cc_graph .axis_label > div > em {display:block; font-size:11px; line-height:15px; color:#777;}
+.c_chart .cc_graph .axis_label .al_x_l {position:absolute; left:0; bottom:0; text-align:left;}
+.c_chart .cc_graph .axis_label .al_x_r {position:absolute; right:0; bottom:0; text-align:right;}
+.c_chart .cc_graph .axis_label .al_y_l {position:absolute; left:0; top:0; text-align:left;}
+.c_chart .cc_graph .axis_label .al_y_r {position:absolute; right:0; top:0; text-align:right;}
+
+.c_chart .cc_legend {font-size:0; line-height:0; text-align:center; margin-top:8px;}
+.c_chart .cc_legend * {vertical-align:middle;}
+.c_chart .cc_legend > div {display:inline-block; padding:2px 8px;}
+.c_chart .cc_legend > div > i {display:inline-block; width:20px; height:20px;}
+.c_chart .cc_legend > div > span {display:inline-block; font-size:12px; line-height:20px; padding-left:4px;}
+
+.c_chart_is {position:relative; padding:70px 0 10px 0;}
+.c_chart_is .cc_graph {height:100px;}
+.c_chart_is .cc_figure {position:absolute; left:0; top:0; width:100%;}
+.c_chart_is .cc_figure p {display:block; font-size:0; line-height:0; width:80px; position:absolute; text-align:center;}
+.c_chart_is .cc_figure .numinfo1 {right:50%; top:40px; margin-right:32px;}
+.c_chart_is .cc_figure .numinfo2 {left:50%; top:12px; margin-left:-40px;}
+.c_chart_is .cc_figure .numinfo3 {left:50%; top:40px; margin-left:32px;}
+.c_chart_is .cc_figure p * {vertical-align:middle;}
+.c_chart_is .cc_figure p .num_tit {display:inline-block; font-size:11px; line-height:15px; font-weight:400;}
+.c_chart_is .cc_figure p .num_rnum {display:inline-block; font-family:'Century Gothic'; font-size:16px; line-height:20px; letter-spacing:0; color:#008b9f;}
+.c_chart_is .cc_figure p em {display:inline-block; font-size:12px; line-height:16px; margin-left:2px;}
+.c_chart_is .cc_figure p .num_percentage {display:inline-block; font-family:'Century Gothic'; font-size:11px; line-height:15px; letter-spacing:0; color:#008b9f;}
+
+.c_chart_rpr_A {margin-top:24px;}
+.c_chart_rpr_A .cc_graph {height:160px; margin:0 auto;}
+.mainlive_container .c_chart_rpr_A {margin-top:0;}
+.mainlive_container .c_chart_rpr_A .cc_graph {height:160px;}
+
+.c_chart_rpr_B {padding:10px 0;}
+.c_chart_rpr_B .cc_graph {height:220px;}
+
+.c_chart_gir {padding:10px 0;}
+.c_chart_gir .cc_graph {height:220px;}
+
+.c_chart.c_chart_wps {padding:12px 16px;}
+.c_chart.c_chart_wps .cc_graph {height:164px; padding:20px 0 0 0;}
+.c_chart.c_chart_wps .cc_graph .axis_label span {display:inline-block;}
+.c_chart.c_chart_wps .cc_graph .cca_complete_day {color:#81bc57;}
+.c_chart.c_chart_wps .cc_graph .cca_confirm_day {color:#ffb45a;}
+.c_chart.c_chart_wps .cc_graph .cca_cure_total {color:#28afb4;}
+.c_chart.c_chart_wps .cc_graph .cca_complete_total {color:#2a5ebc;}
+.c_chart.c_chart_wps .cc_legend {margin:0 -16px;}
+.c_chart.c_chart_wps .cc_legend > div {padding:2px 4px;}
+.c_chart.c_chart_wps .cc_legend > div > i {width:16px; height:16px;}
+.c_chart.c_chart_wps .cc_legend > div > span {font-size:11px; padding-left:0;}
+.c_chart.c_chart_wps .cc_legend .ccl_cure_total i {background:url(../image/chart/legend_wps_cure_total.png) no-repeat left center;}
+.c_chart.c_chart_wps .cc_legend .ccl_complete_day i {background:url(../image/chart/legend_wps_complete_day.png) no-repeat center center;}
+.c_chart.c_chart_wps .cc_legend .ccl_complete_total i {background:url(../image/chart/legend_wps_complete_total.png) no-repeat left center;}
+.c_chart.c_chart_wps .cc_legend .ccl_confirm_day i {background:url(../image/chart/legend_wps_confirm_day.png) no-repeat center center;}
+
+.c_chart.c_chart_npt {margin-top:16px;}
+.c_chart.c_chart_npt .cc_graph {height:480px; padding:10px 0 0 0;}
+.c_chart.c_chart_npt .cc_legend .ccl_korea i {background:url(../image/chart/legend_npt_korea.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_china i {background:url(../image/chart/legend_npt_china.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_italy i {background:url(../image/chart/legend_npt_italy.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_iran i {background:url(../image/chart/legend_npt_iran.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_spain i {background:url(../image/chart/legend_npt_spain.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_france i {background:url(../image/chart/legend_npt_france.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_germany i {background:url(../image/chart/legend_npt_germany.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_america i {background:url(../image/chart/legend_npt_america.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_switzerland i {background:url(../image/chart/legend_npt_switzerland.png) no-repeat center center;}
+.c_chart.c_chart_npt .cc_legend .ccl_uk i {background:url(../image/chart/legend_npt_uk.png) no-repeat center center;}
+
+.c_chart.c_chart_rps_B {margin-top:16px;}
+.c_chart.c_chart_rps_B .cc_graph {height:480px; padding:0 20px 0 0;}
+.c_chart.c_chart_rps_B .cc_graph .axis_label .al_x_r {margin:0 0 5px 0;}
+
+.c_chart.c_chart_pt {margin-top:24px;}
+.c_chart.c_chart_pt .cc_graph {height:320px; padding-top:25px;}
+.c_chart.c_chart_pt .cc_graph .cca_total {color:#3571cc;}
+.c_chart.c_chart_pt .cc_graph .cca_day {color:#e04f22;}
+.c_chart.c_chart_pt .cc_legend .ccl_total i {background:url(../image/chart/legend_pt_total.png) no-repeat center center;}
+.c_chart.c_chart_pt .cc_legend .ccl_day i {background:url(../image/chart/legend_pt_day.png) no-repeat center center;}
+
+.c_chart.c_chart_ct {margin-top:24px;}
+.c_chart.c_chart_ct .cc_graph {height:320px; padding-top:25px;}
+.c_chart.c_chart_ct .cc_graph .cca_total {color:#e0217b;}
+.c_chart.c_chart_ct .cc_graph .cca_day {color:#1f7ccb;}
+.c_chart.c_chart_ct .cc_legend .ccl_total i {background:url(../image/chart/legend_ct_total.png) no-repeat center center;}
+.c_chart.c_chart_ct .cc_legend .ccl_day i {background:url(../image/chart/legend_ct_day.png) no-repeat center center;}
+
+/* regional incidence ratio - donut */
+[class^="regional_incidence_ratio"] {position:relative; width:160px; height:160px; margin:0 auto; padding:28px;}/* padding:40px 0 16px 0; */
+[class^="regional_incidence_ratio"] > svg {width:104px; height:104px;}
+[class^="regional_incidence_ratio"] > svg > path:first-child {stroke-width:20px; stroke:#e3e3e3; fill:none;}
+[class^="regional_incidence_ratio"] > svg > path:last-child {stroke-width:20px; stroke:#ee5858; fill:none;}
+.rir_text {position:absolute; left:0; top:0; width:100%; height:100%; font-size:0; line-height:0; text-align:center;}
+.rir_text::before {display:inline-block; content:''; height:100%; vertical-align:middle;}
+.rir_text > div {display:inline-block; vertical-align:middle;}
+.rir_text > div > span {display:block; font-size:12px; line-height:20px; letter-spacing:-0.048em;}
+.rir_text > div > p {display:block; font-family:'Lato'; font-size:24px; line-height:32px;}
+
+/* regional_patient_status_A - map */
+.regional_patient_status_A {display:table; table-layout:fixed; width:100%; border:1px solid #dcdcdc; margin-top:16px;}
+.regional_patient_status_A > div {display:table-cell; vertical-align:top; padding:20px 24px;}
+.regional_patient_status_A .rpsa_map {width:65%; padding-bottom:32px;}
+.regional_patient_status_A .rpsa_detail {position:relative; background:#f4f2f2;}
+
+.regional_patient_status_A .rpsa_map .rpsam_descript {position:relative; padding-left:24px; font-size:12px; line-height:20px; color:#333;}
+.regional_patient_status_A .rpsa_map .rpsam_descript::before {position:absolute; left:0; top:1px; content:"?"; display:block; width:18px; height:18px; border-radius:100%; font-family:'Lato'; font-size:10px; line-height:18px; font-size:12px; font-weight:600; color:#fff; text-align:center; background-color:#ff9000;}
+.regional_patient_status_A .rpsa_map .rpsam_descript .info {color:#ee5858;}
+
+.regional_patient_status_A .rpsa_map .rpsam_graph {position:relative; width:400px; margin:0 auto;}
+.regional_patient_status_A .rpsa_map .rpsam_graph svg {display:block; width:100%; height:530px;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"] {border:0; position:absolute; display:block; margin:0; padding:4px 8px; background:#fff; text-align:center; box-shadow:2px 2px 4px rgba(100, 100, 100, 0.2); border-radius:2px;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"] .name {display:block; font-size:11px; line-height:15px; color:#333; font-weight:700;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"] .num {display:block; font-family:'Lato'; font-size:14px; line-height:18px; letter-spacing:0; font-weight:bold; color:#e30000; margin-top:2px;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"] .before {display:block; font-family:'Lato'; font-size:10px; line-height:14px; letter-spacing:0; color:#ea4c4c;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"].select {background:#141414;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"].select .name {color:#fff;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"].select .num {color:#fff;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city^="map_city"].select .before {color:#ffcfcf;}
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city1"]	{left:134px; top:84px;} /*서울*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city2"] {left:284px; top:398px;}/*부산*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city3"] {left:270px; top:260px;} /*대구*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city4"] {left:38px; top:84px;} /*인천*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city5"] {left:102px; top:368px;} /*광주*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city6"] {left:158px; top:208px;} /*대전*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city7"] {left:328px; top:352px;} /*울산*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city8"] {left:108px; top:162px;} /*세종*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city9"] {left:132px; top:14px;} /*경기*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city10"] {left:226px; top:54px;} /*강원*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city11"] {left:184px; top:134px;} /*충북*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city12"] {left:52px; top:212px;} /*충남*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city13"] {left:110px; top:284px;} /*전북*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city14"] {left:40px; top:392px;} /*전남*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city15"] {left:250px; top:190px;} /*경북*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city16"] {left:206px; top:348px;} /*경남*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city17"] {left:56px; top:494px;} /*제주*/
+.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city18"] {left:302px; top:464px;} /*검역*/
+
+.regional_patient_status_A .rpsa_detail > div > div {display:none;}
+.regional_patient_status_A .rpsa_detail > div > div.open {display:block;}
+.regional_patient_status_A .rpsa_detail .cityname {display:block; font-size:24px; line-height:32px; font-weight:700; color:#000;}
+.regional_patient_status_A .rpsa_detail .citychart {display:none;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo {margin-top:24px;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo > li {display:table; width:100%; font-size:0; line-height:0;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo > li > div {display:table-cell; width:50%; padding:6px 0;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo > li > div:last-child {text-align:right;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo > li > div > * {display:inline-block; vertical-align:middle;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo .tit {font-size:14px; line-height:22px; color:#444; font-weight:500;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo .num {font-family:'Lato'; font-size:18px; line-height:22px; font-weight:500; color:#000; margin-bottom:-2px;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo > li > div > em {font-size:14px; line-height:22px; color:#666; margin-left:4px;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo [class^="sub_"] {font-size:12px; line-height:1;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo .sub_tit {color:#666; margin-right:4px;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo .sub_tit.red {color:#da4848;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo .sub_num {font-family:'Lato'; font-weight:500;}
+.regional_patient_status_A .rpsa_detail .mapview .cityinfo .sub_num.red {color:#cf0000;}
+
+.regional_patient_status_A .rpsa_detail .rpsad_legend {position:absolute; bottom:20px; left:24px;}
+.regional_patient_status_A .rpsa_detail .rpsad_legend > li {padding:4px; padding-left:24px; font-size:12px; line-height:20px; color:#333; word-break:keep-all;}
+.regional_patient_status_A .rpsa_detail .rpsad_legend > li > span {color:#000; font-weight:700;}
+.regional_patient_status_A .rpsa_detail .rpsad_legend > li::before {content:""; display:block; position:absolute; left:0; top:5px; width:18px; height:18px; font-family:'Lato'; font-size:10px; line-height:18px; color:#fff; text-align:center; background:#8e7c7c; border-radius:100%;}
+.regional_patient_status_A .rpsa_detail .rpsad_legend > li:nth-child(1)::before {content:"1";}
+.regional_patient_status_A .rpsa_detail .rpsad_legend > li:nth-child(2)::before {content:"2";}
+
+.mainlive_container .regional_patient_status_A {margin-top:8px; border:0;}
+.mainlive_container .regional_patient_status_A .rpsa_map {background:#fff;}
+.mainlive_container .regional_patient_status_A .rpsa_map .rpsam_graph {margin-top:-17px;}
+.mainlive_container .regional_patient_status_A .rpsa_detail {padding:12px 16px;}
+.mainlive_container .regional_patient_status_A .rpsa_detail h3 { width:100%; padding:12px 0 12px 72px; z-index:1} 
+.mainlive_container .regional_patient_status_A .rpsa_detail h3 > .title { padding-left:8px; padding-right:8px; color:#725454; line-height:20px; border:1px solid #c27171;}
+.mainlive_container .regional_patient_status_A .rpsa_detail h3 > .title > span { display:inline-block;vertical-align:middle;}
+.mainlive_container .regional_patient_status_A .rpsa_detail .info_map_btn { display:inline-block; margin-left:4px; width:16px; height:16px; text-align:center; background-color:#a3a3a3; color:#fff; font-size:12px; font-weight:400; line-height:16px; border-radius:13px;vertical-align:middle;}
+.mainlive_container .regional_patient_status_A .rpsa_detail .info_map_script { display:none;  position:absolute; left:50%; top:54px; width:160px; margin-left:-70px; z-index:2}
+.mainlive_container .regional_patient_status_A .rpsa_detail .info_map_script > a { display:block; width:100%; height:auto; padding:6px 10px; font-size:13px; line-height:1.25em; text-align:left; border:1px solid #e1acac; background-color:#fff; color:#c37474; border-radius:6px;}
+.mainlive_container .regional_patient_status_A .rpsa_detail .cityname {position:absolute; top:20px; left:20px; font-size:26px; font-weight:600; color:#000; z-index:2} 
+.mainlive_container .regional_patient_status_A .rpsa_detail .mapview .cityinfo {width:100%;}
+
+/* .mainlive_container .regional_patient_status_A .rpsa_detail { position:relative; }
+.mainlive_container .regional_patient_status_A .rpsa_detail h3 { width:100%; padding:27px 0 10px 76px; z-index:1} 
+.mainlive_container .regional_patient_status_A .rpsa_detail h3 > .title { padding-left:12px; padding-right:12px; color:#725454; line-height:20px; border:1px solid #c27171;}
+.mainlive_container .regional_patient_status_A .rpsa_detail h3 > .title > span { display:inline-block;vertical-align:middle;}
+.mainlive_container .regional_patient_status_A .rpsa_detail .info_map_btn { display:inline-block; margin-left:4px; width:16px; height:16px; text-align:center; background-color:#a3a3a3; color:#fff; font-size:12px; font-weight:400; line-height:16px; border-radius:13px;vertical-align:middle;}
+.mainlive_container .regional_patient_status_A .rpsa_detail .info_map_script { display:none;  position:absolute; left:50%; top:54px; width:160px; margin-left:-70px; z-index:2}
+.mainlive_container .regional_patient_status_A .rpsa_detail .info_map_script > a { display:block; width:100%; height:auto; padding:6px 10px; font-size:13px; line-height:1.25em; text-align:left; border:1px solid #e1acac; background-color:#fff; color:#c37474; border-radius:6px;}
+.mainlive_container .regional_patient_status_A .rpsa_detail > div { position:absolute; left:0; top:0; width:0; height:0; line-height:0; overflow:hidden; }
+.mainlive_container .regional_patient_status_A .rpsa_detail > div.open { position:relative;width:100%; height:auto; line-height:inherit; overflow:inherit;}
+.mainlive_container .regional_patient_status_A .rpsa_detail .cityname { position:absolute; top:-40px; left:20px; font-size:26px; font-weight:600; color:#000; z-index:2}  */
+
+@media (min-width:1180px) {
+	.mainlive_container .regional_patient_status_A {height:606px;}
+}
+@media (max-width:767px) {
+	.regional_patient_status_A,
+	.regional_patient_status_A > div {display:block;}
+	.regional_patient_status_A .rpsa_map {width:100%;}
+	.regional_patient_status_A .rpsa_map .rpsam_graph {width:280px;}	
+	.regional_patient_status_A .rpsa_map .rpsam_graph svg {height:371px;}
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city1"] {left:104px; top:66px;} /*서울*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city2"] {left:184px; top:278px;}/*부산*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city3"] {left:178px; top:204px;} /*대구*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city4"] {left:26px; top:40px;} /*인천*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city5"] {left:74px; top:268px;} /*광주*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city6"] {left:110px; top:134px;} /*대전*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city7"] {left:230px; top:244px;} /*울산*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city8"] {left:64px; top:106px;} /*세종*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city9"] {left:90px; top:2px;} /*경기*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city10"] {left:184px; top:16px;} /*강원*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city11"] {left:152px; top:88px;} /*충북*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city12"] {left:16px; top:148px;} /*충남*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city13"] {left:70px; top:192px;} /*전북*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city14"] {left:0px; top:258px;} /*전남*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city15"] {left:192px; top:134px;} /*경북*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city16"] {left:134px; top:248px;} /*경남*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city17"] {left:44px; top:336px;} /*제주*/
+	.regional_patient_status_A .rpsa_map .rpsam_graph button[data-city="map_city18"] {left:220px; top:322px;} /*검역*/
+
+	.regional_patient_status_A .rpsa_detail .cityname {font-size:18px; line-height:26px;}
+	.regional_patient_status_A .rpsa_detail .mapview .cityinfo {width:100%;}
+	.regional_patient_status_A .rpsa_detail .rpsad_legend {position:relative; left:0; top:0; margin-top:24px;}
+}

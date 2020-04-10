@@ -13,6 +13,10 @@ export class AppRoutes extends BaseRoute {
         new Index().renderView(req, res, next);
       });
   
+      router.get("/map", (req: Request, res: Response, next: NextFunction) => {
+        new Index().renderMapView(req, res, next);
+      });
+
       router.post("/add", (req: Request, res: Response, next: NextFunction) => {
         new Index().add(req, res, next);
       });

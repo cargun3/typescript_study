@@ -1,0 +1,191 @@
+<html style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title><%=title%></title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/export180px1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/export32px1.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/export16px1.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet"  type="text/css" href="/css/main.css">
+  <link rel="stylesheet"  type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=t1qcxjzvzc"></script>
+</head>
+<body style="height: 100%;">
+  <div class="dash">
+    <div class="dash">
+      <div style="height: 33px;">
+        <img class="dash_back" src="/images/btn_back@3x.png" style="position: absolute; cursor:pointer; display:none; width: 20px; top: 7px; left: 15px;">
+        <img class="dada" src="/images/btn_cancel@3x.png" style="position: absolute; cursor:pointer; width: 17px; top: 7px; right: 15px;">
+      </div>
+  
+      <div class="dash-item-wrap">
+        <div class="dash-profile" style="font-size:17px;width:100%;font-weight:bolder;padding-bottom: 15px;">
+          <div class="nth"></div>
+          <div id="profile" style="font-size:13px;color:grey;"></div>
+          <div id="tag" style="font-size:14px;color:grey;"></div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="dashgo">
+    <span style="font-size: 22px;" class="caca glyphicon glyphicon-chevron-up"></span>
+  </div>
+  <div class="search">
+    <input class="searchInput" placeholder="목적지를 입력해주세요">
+    <span style="cursor: pointer;" class="sese glyphicon glyphicon-search"></span>
+  </div>
+  <div class="hohow" style="font-size:11px;font-weight:500;">
+    <!-- <div style="font-weight: bolder;">Last-Update : 2020.02.22 21시 기준</div> -->
+    <div>지도 API 지원 : 네이버 클라우드 플랫폼</div>
+    <div>목적지 검색 지원 : 카카오맵</div>
+    <div>서버 비용 지원 : AWS</div>
+  </div>
+  <div class="to">
+    <div class="toto">
+      <span style="top: 15px;font-weight: lighter;font-size: 20px;position:absolute;left:20px;" class="slidede glyphicon glyphicon-menu-hamburger"></span>
+      <span class="corona">코로나 맵</span>
+      <div class="coroname" onclick="location.href=&quot;https://maskmap.site&quot;">마스크맵</div>
+    </div>
+  </div>
+  <div class="wa d">
+    <a href="#" class="hi load" style="pointer-events: none;"></a>
+  </div>
+  <div class="wa d o" style="color: rgb(0, 0, 0);">
+    <div class="arrow-box">
+      <span class="arar glyphicon glyphicon-bell"> </span>
+    </div>
+  </div>
+  <div class="wa">
+    <!-- <a href="#" class="hi"></a> -->
+    <span class="confirm" style="font-weight: bolder;">확진자</span>
+    <div class="content">
+      <div>10,423</div>
+    </div>
+    <div class="content1 clear" style="font-size: 15px;justify-content:space-evenly;padding: 0 0px;">
+      <div>
+        <div class="cure" style="font-size:13px;color:rgb(47,181,105);font-weight:bolder;">완치</div>
+        <div>6,973</div>
+      </div>
+      <div style="width: 1px; height:100%; background:black;"></div>
+      <div>
+        <div class="death" style="font-size:13px;color:red;font-weight:bolder;">사망</div>
+        <div>204</div>
+      </div>
+    </div>
+    <span style="cursor: pointer;" class="up glyphicon glyphicon-chevron-down"></span>
+    <div class="item-wa" style="height:130px;">
+      <button class="wawa seoul" id="서울특별시"><span style="color:black">서울</span></button>
+      <button class="wawa busan" id="부산광역시"><span style="color:black">부산</span></button>
+      <button class="wawa daegu" id="대구광역시"><span style="color:black">대구</span></button>
+      <button class="wawa daejeon" id="대전광역시"><span style="color:black">대전</span></button>
+      <button class="wawa incheon" id="인천광역시"><span style="color:black">인천</span></button>
+      <button class="wawa gwangju" id="광주광역시"><span style="color:black">광주</span></button>
+      <button class="wawa ulsan" id="울산광역시"><span style="color:black">울산</span></button>
+      <button class="wawa sejong" id="세종특별자치시"><span style="color:black">세종</span></button>
+      <button class="wawa gyeonggi" id="경기도"><span style="color:black">경기</span></button>
+      <button class="wawa gangwon" id="강원도"><span style="color:black">강원</span></button>
+      <button class="wawa chungbuk" id="충청북도"><span style="color:black">충북</span></button>
+      <button class="wawa chungnam" id="충청남도"><span style="color:black">충남</span></button>
+      <button class="wawa jeollabuk" id="전라북도"><span style="color:black">전북</span></button>
+      <button class="wawa jeollanam" id="전라남도"><span style="color:black">전남</span></button>
+      <button class="wawa gyeongbuk" id="경상북도"><span style="color:black">경북</span></button>
+      <button class="wawa gyeongnam" id="경상남도"><span style="color:black">경남</span></button>
+      <button class="wawa jeju" id="제주특별자치도"><span style="color:black">제주</span></button>
+      <!-- <button class="wawa" id="-1">
+        <span style="color:black;font-weight:bolder;">전체</span>
+      </button> -->
+    </div>
+    <div class="wa2">
+      <!-- <a href="#" class="hi"></a> -->
+      <span class="visit" style="font-size:12px;font-weight:bolder;">방문날짜에 따른 색상구분</span>
+      <br>
+      <hr style="border-top: 1.5px solid rgb(95, 90, 90); margin-bottom:6.5px !important;margin-top:0px !important;">
+      <div class="cir-wrap">
+        <div class="circir blue"></div>
+        <span class="under9" style="font-weight: bolder;">
+          4일 이상 9일 이하
+        </span>
+      </div>
+      <div class="cir-wrap">
+        <div class="circir yellow"></div>
+        <span class="under4" style="font-weight: bolder;">
+          24시간 이상 4일 미만
+        </span>
+      </div>
+      <div class="cir-wrap">
+        <div class="circir red"></div>
+        <span class="under24" style="font-weight: bolder;">
+          24시간 미만
+        </span>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <div style="height: 10%;">
+        <span style="font-size: 20px;top: 14px;position:absolute;left:20px;color:white;font-weight: lighter;" class="slidede glyphicon glyphicon-remove"></span>
+      </div>
+      <div class="sidebar-content">
+        <div class="tititi">
+          <span class="sidebar_corona" style="font-size: 25px;font-weight:bolder">코로나맵 벤치 마킹 샘플</span><br>
+          <span class="sidebar_de" style="color:gray">코로나19 현황 지도</span><br>
+        </div>
+        <div class="ju" style="word-break: keep-all;">
+          <div>
+          </div>
+        </div>
+        <div class="link" style="padding-top: 13px;
+        border-top: 1px solid white;word-break: keep-all;">
+          <span style="font-weight: bolder;font-size:18px;">코로나맵 벤치마킹 샘플</span><br>
+          <span style="font-weight: bolder;font-size:15px;">
+            <a style="font-weight: bolder;" href=" https://m.terms.naver.com/entry.nhn?cid=66630&amp;docId=5916213&amp;categoryId=66630">코로나 바이러스 예방법
+              지식백과</a></span><br>
+          <span style="color:gray;font-size:12px;">출처 : 코로나맵 / 벤치마킹 샘플 데모</span><br>
+          <span style="color:gray;font-size:12px;">제공 : 질병관리본부</span>
+        </div>
+        <div class="mymy" style="word-break: keep-all;">
+          <span style="user-select:text;"><span class="email_sidebar">이메일</span> : ehdgns1766@naver.com</span>
+          <span><span class="developer">개발자</span> :
+            <a class="leedong" style="font-weight: bolder;" href="https://www.facebook.com/mozi.hunee">김건우, 정효영</a></span>
+        </div>
+      </div>
+    </aside>
+    <div class="overlay"></div>
+    <div class="notice" style="display: none;">
+      <div class="notice-title">
+        Notice
+  
+      </div>
+      <button class="english-btn">English</button>
+      <div class="notice-wrap">
+        <!-- <div class="butt" id="notice" style="background: #333333;border-radius: 10px;">
+          공지
+        </div> -->
+        <!-- <div class="butt" id="speed" style="background: rgb(212, 36, 36);border-radius: 0 10px 10px 0;">
+          속보
+        </div> -->
+      </div>
+      <div class="notice-content">
+      </div>
+      <div class="search_input_wrap">
+        <img class="search_back" src="/images/btn_back@3x.png">
+        <div class="search2">
+          <input class="searchInput2" style="border: none;width: 86%;" placeholder="목적지를 입력해주세요">
+          <span style="cursor: pointer;" class="sese glyphicon glyphicon-search"></span>
+          <!-- <img src="/images/ic_search@3x.png" class="sese1" style="width: 23px;cursor: pointer;"> -->
+        </div>
+      </div>
+      <div class="search_result_wrap" style="position:absolute;">
+      </div>
+    </div>
+  </div>
+  <div id="map" style="width: 100%; height: 100%; position: relative; overflow: hidden; background: url("https://ssl.pstatic.net/static/maps/mantle/1x/pattern_1.png") 0px 0px repeat transparent;"></div>
+  <script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+    </script>
+</body>
+</html>
