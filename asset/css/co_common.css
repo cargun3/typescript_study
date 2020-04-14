@@ -214,7 +214,7 @@ input[type="text"], input[type="password"], textarea, select {width:100%; transi
 .wrap {height:auto; position:relative;}
 
 /* btn top */
-.btn_top {width:40px; height:40px; border:1px solid #c1c1c1; border-left:1px solid #e1e1e1; border-top:1px solid #e1e1e1; background:url(../image/header/header_icon.png) no-repeat #fdfdfd -120px -50px; right:16px; display:none;}
+.btn_top {width:40px; height:40px; border:1px solid #c1c1c1; border-left:1px solid #e1e1e1; border-top:1px solid #e1e1e1; background:url(../images/header/header_icon.png) no-repeat #fdfdfd -120px -50px; right:16px; display:none;}
 
 /* width catch */
 .w_catch {position:absolute; left:0; top:0; width:100%; height:0; overflow:hidden;}
@@ -233,15 +233,15 @@ input[type="text"], input[type="password"], textarea, select {width:100%; transi
 .navigation .n_left .corona_h1 a {color:#000}
 .navigation .n_right .shim {float:left; padding:9px 0; margin-left:12px;}
 .navigation .n_right .shim li {float:left; padding:0 10px;}
-.navigation .n_right .shim li a { display:block; padding:0 0 0 26px; height:40px; line-height:40px; font-size:15px; font-weight:400; letter-spacing:-0.07em; color:#000; background:url(../image/header/shim.png) no-repeat 0 center; background-size:20px;}
+.navigation .n_right .shim li a { display:block; padding:0 0 0 26px; height:40px; line-height:40px; font-size:15px; font-weight:400; letter-spacing:-0.07em; color:#000; background:url(../images/header/shim.png) no-repeat 0 center; background-size:20px;}
 .navigation .n_right .sns { float:left; display:table; padding-left:7px; margin-top:19px; height:24px;}
 .navigation .n_right .sns > li {display:table-cell; vertical-align:middle; text-align:center;}
 .navigation .n_right .sns > li > a { display:block; margin:0 2px; width:24px; height:24px; line-height:40px; font-size:0; color:transparent; border-radius:50%; overflow:hidden; background-color:#405985; border:1px solid #dcdcdc}
 .navigation .n_right .sns > li > a i { display:none; }
-.navigation .n_right .sns > li.facebook > a { background:url(../image/sub_cmn/sns_icon_face.png) no-repeat center center;}
-.navigation .n_right .sns > li.youtube > a { background:url(../image/sub_cmn/sns_icon_you.png) no-repeat center center;}
-.navigation .n_right .sns > li.post > a { background:url(../image/sub_cmn/sns_icon_naver.png) no-repeat center center; border:1px solid #f3f3f3}
-.navigation .n_right .sns > li.twitter > a { background:url(../image/sub_cmn/sns_icon_tw.png) no-repeat center center;}
+.navigation .n_right .sns > li.facebook > a { background:url(../images/sub_cmn/sns_icon_face.png) no-repeat center center;}
+.navigation .n_right .sns > li.youtube > a { background:url(../images/sub_cmn/sns_icon_you.png) no-repeat center center;}
+.navigation .n_right .sns > li.post > a { background:url(../images/sub_cmn/sns_icon_naver.png) no-repeat center center; border:1px solid #f3f3f3}
+.navigation .n_right .sns > li.twitter > a { background:url(../images/sub_cmn/sns_icon_tw.png) no-repeat center center;}
 .navigation .n_right .country { float:left; display:table; padding-left:7px; margin-top:19px; height:24px;}
 .navigation .n_right .country > li { display:table-cell; padding-left:7px; vertical-align:middle; text-align:center;}
 .navigation .n_right .country > li::before { content:""; display:inline-block; width:4px; height:4px; margin-left:6px; margin-right:5px; line-height:28px; background-color:#8994a8; border-radius:100%; vertical-align:middle}
@@ -292,7 +292,7 @@ input[type="text"], input[type="password"], textarea, select {width:100%; transi
 .header .n_search input[type="button"] { margin:0; padding:0; border:0 none;}
 .header .n_search input[type="submit"]:hover,
 .header .n_search input[type="button"]:hover { cursor:pointer}	
-.header .n_search .btn_search {display:block; position:absolute; right:0 ; top:12px; width:36px; height:36px; background:url(../image/header/ico_search.png) no-repeat center; background-color:#233558; color:transparent}
+.header .n_search .btn_search {display:block; position:absolute; right:0 ; top:12px; width:36px; height:36px; background:url(../images/header/ico_search.png) no-repeat center; background-color:#233558; color:transparent}
 
 @media (min-width:1180px) {
 	.header > div {width:1180px; height:auto; margin:0 auto;}
