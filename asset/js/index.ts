@@ -39,5 +39,19 @@ namespace Main.IndexPage {
                 alert('적합한 URL이 아닙니다^^');
             }
         });
-    })
+
+        $('#btnSave2').on("click", function () {
+            $.get("/request/test/api-call", "" , function (data: Object) {
+                console.log(data);
+            });
+        });
+
+        $('#btnSave3').on("click", function () {
+            $.get("/axios/test/api-call", "" , function (data: Object) {
+                console.log(data);
+            });
+        });
+    });
+
+    
 }

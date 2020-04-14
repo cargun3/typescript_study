@@ -25,11 +25,6 @@ export class Index extends BaseRoute {
         this.render(req, res, "index.html", options);
     }
 
-    public renderMapView(req: Request, res: Response, next: NextFunction) {
-        
-        this.render(req, res, "map2.html");
-    }
-
     public add(req: Request, res: Response, next: NextFunction) {    
         // 클라이언트에 받은 북마크 정보
         let item = req.body.item; 

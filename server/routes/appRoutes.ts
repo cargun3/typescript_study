@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response, Router } from "express";
 import { BaseRoute } from "./../routes/BaseRoutes";
 import { Index } from "../controllers/index";
+import { DashBaordIndex } from "../controllers/dashboardIndex";
 
 export class AppRoutes extends BaseRoute {
 
@@ -14,12 +15,19 @@ export class AppRoutes extends BaseRoute {
       });
   
       router.get("/map", (req: Request, res: Response, next: NextFunction) => {
-        new Index().renderMapView(req, res, next);
+        new DashBaordIndex().renderMapView(req, res, next);
       });
 
       router.post("/add", (req: Request, res: Response, next: NextFunction) => {
         new Index().add(req, res, next);
       });
   
+      router.get("/request/test/api-call", (req: Request, res: Response, next: NextFunction) => {
+        new DashBaordIndex().testCallAPI(req, res, next);
+      });
+
+      router.get("/axios/test/api-call", (req: Request, res: Response, next: NextFunction) => {
+        new DashBaordIndex().testCallAPIByAsyncAndAwait(req, res, next);
+      });
     }
 }
